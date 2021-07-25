@@ -5,8 +5,7 @@ import {Form} from './comp/Form'
 
 function Main() {
 
-    const [show,setShow] = useState('none')
-    console.log(show)
+    const [show,setShow] = useState(false)
 
     return (
         <>
