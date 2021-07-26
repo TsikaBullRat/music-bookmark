@@ -1,18 +1,13 @@
-import { useState } from 'react'
 import { Banner } from './comp/Banner'
 import { Body } from './comp/Body'
-import {Form} from './comp/Form'
+import data from "./comp/Data"
 
 function Main() {
 
-    const [show,setShow] = useState('none')
-    console.log(show)
-
     return (
         <>
-            <Banner display={setShow}/>
-            <Body />
-            <Form open="show"/>
+            <Banner  />
+            <Body  data={data}/>
         </>
     )
 }

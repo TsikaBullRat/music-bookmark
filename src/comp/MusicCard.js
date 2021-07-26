@@ -1,14 +1,15 @@
+import React from 'react'
 import './Comp.css'
-import albumArt from '../res/Superunknown.jpg'
 
-export const MusicCard =()=>{
-    return(
-        <div className="music-card">
-            <img src={albumArt}/>
-            <p>Song: Black Hole Sun</p>
-            <p>Artist: Soundgarden</p>
-            <p>Album: Superunknown</p>
-            <p>Genre: Rock</p>
+export const MusicCard = props => {
+    
+    return (
+        <div key={props.info.id} className="music-card">
+            <img src={props.info.res} alt="No Album Art"/>
+            <p>Song: {props.info.song}</p>
+            <p>Artist: {props.info.artist}</p>
+            <p>Album: {props.info.album}</p>
+            <p>Genre: {props.info.genre}</p>
         </div>
     )
 }
