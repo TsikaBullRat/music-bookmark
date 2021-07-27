@@ -6,7 +6,7 @@ function Main() {
 
     return (
         <>
-            <Banner  />
+            <Banner  data={data}/>
             <Body  data={data}/>
         </>
     )

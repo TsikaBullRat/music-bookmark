@@ -1,0 +1,19 @@
+const [view, setView] = useState({})
+
+    const Check = (bool) => {
+        
+        if(bool = true){
+            setView()
+        }else{
+            setView({
+                form: {
+                    display: 'none'
+                },
+                add: {
+                    display: 'block',
+                    position: 'relative',
+                    zIndex: 'inherit'
+                }
+            })
+        }
+    }

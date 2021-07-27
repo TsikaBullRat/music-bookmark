@@ -7,7 +7,8 @@ const data = [
         year: 2002,
         genre: 'RnB',
         res: "../res/Floetic.jfif",
-        url: 'https://music.youtube.com/watch?v=vTFg3QjSfw4&list=RDAMVMvTFg3QjSfw4'
+        url: 'https://music.youtube.com/watch?v=vTFg3QjSfw4&list=RDAMVMvTFg3QjSfw4',
+        show: true
     },
     {
         id: 1,
@@ -17,7 +18,8 @@ const data = [
         year: 1994,
         genre: 'Rock',
         res: "../res/Superunknown.jpg",
-        url: 'https://music.youtube.com/watch?v=1rtNlV9Ytlk&list=RDAMVM1rtNlV9Ytlk'
+        url: 'https://music.youtube.com/watch?v=1rtNlV9Ytlk&list=RDAMVM1rtNlV9Ytlk',
+        show: true
     },
     {
         id: 2,
@@ -27,7 +29,8 @@ const data = [
         year: 2003,
         genre: 'Jazz',
         res: "../res/Homeatlast.jpg",
-        url: 'https://music.youtube.com/watch?v=CWewHqinajk&list=RDAMVMCWewHqinajk'
+        url: 'https://music.youtube.com/watch?v=CWewHqinajk&list=RDAMVMCWewHqinajk',
+        show: true
     },
     {
         id: 3,
@@ -37,7 +40,8 @@ const data = [
         year: 2000,
         genre: 'Hip Hop',
         res: "../res/Letsgetfree.jfif",
-        url: 'https://music.youtube.com/watch?v=8OK-u9IH2X4&list=RDAMVM8OK-u9IH2X4'
+        url: 'https://music.youtube.com/watch?v=8OK-u9IH2X4&list=RDAMVM8OK-u9IH2X4',
+        show: true
     },
     {
         id: 4,
@@ -47,7 +51,8 @@ const data = [
         year: 2002,
         genre: 'RnB',
         res: "../res/Floetic.jfif",
-        url: 'https://music.youtube.com/watch?v=LGy-QTEVZOA&list=RDAMVMLGy-QTEVZOA'
+        url: 'https://music.youtube.com/watch?v=LGy-QTEVZOA&list=RDAMVMLGy-QTEVZOA',
+        show: true
     },
     {
         id: 5,
@@ -57,7 +62,8 @@ const data = [
         year: 2002,
         genre: 'RnB',
         res: "../res/Floetic.jfif",
-        url: 'https://music.youtube.com/watch?v=PyPnLY0Bzok&list=RDAMVMPyPnLY0Bzok'
+        url: 'https://music.youtube.com/watch?v=PyPnLY0Bzok&list=RDAMVMPyPnLY0Bzok',
+        show: true
     },
     {
         id: 6,
@@ -67,7 +73,8 @@ const data = [
         year: 2002,
         genre: 'RnB',
         res: "../res/Floetic.jfif",
-        url: 'https://music.youtube.com/watch?v=p1TWftWyS88&list=RDAMVMp1TWftWyS88'
+        url: 'https://music.youtube.com/watch?v=p1TWftWyS88&list=RDAMVMp1TWftWyS88',
+        show: true
     },
     {
         id: 7,
@@ -77,7 +84,8 @@ const data = [
         year: 1994,
         genre: 'Rock',
         res: "../res/Superunknown.jpg",
-        url: 'https://music.youtube.com/watch?v=y4FCpOBZPlk&list=RDAMVMy4FCpOBZPlk'
+        url: 'https://music.youtube.com/watch?v=y4FCpOBZPlk&list=RDAMVMy4FCpOBZPlk',
+        show: true
     },
     {
         id: 8,
@@ -87,7 +95,8 @@ const data = [
         year: 1994,
         genre: 'Rock',
         res: "../res/Superunknown.jpg",
-        url: 'https://music.youtube.com/watch?v=9kIv6vVRKpw&list=RDAMVM9kIv6vVRKpw'
+        url: 'https://music.youtube.com/watch?v=9kIv6vVRKpw&list=RDAMVM9kIv6vVRKpw',
+        show: true
     },
     {
         id: 9,
@@ -97,7 +106,8 @@ const data = [
         year: 1994,
         genre: 'Rock',
         res: "../res/Superunknown.jpg",
-        url: 'https://music.youtube.com/watch?v=gaq-Z0gZTG0&list=RDAMVMgaq-Z0gZTG0'
+        url: 'https://music.youtube.com/watch?v=gaq-Z0gZTG0&list=RDAMVMgaq-Z0gZTG0',
+        show: true
     },
     {
         id: 10,
@@ -107,7 +117,8 @@ const data = [
         year: 1998,
         genre: 'Jazz',
         res: "../res/Homeatlast.jpg",
-        url: 'https://music.youtube.com/watch?v=rfw6LT-q04s&list=RDAMVMrfw6LT-q04s'
+        url: 'https://music.youtube.com/watch?v=rfw6LT-q04s&list=RDAMVMrfw6LT-q04s',
+        show: true
     },
     {
         id: 11,
@@ -117,7 +128,8 @@ const data = [
         year: 2001,
         genre: 'Jazz',
         res: "../res/Homeatlast.jpg",
-        url: 'https://music.youtube.com/watch?v=_IisP38Mdv8&list=RDAMVMrfw6LT-q04s'
+        url: 'https://music.youtube.com/watch?v=_IisP38Mdv8&list=RDAMVMrfw6LT-q04s',
+        show: true
     },
     {
         id: 11,
@@ -127,27 +139,9 @@ const data = [
         year: 1989,
         genre: 'Jazz',
         res: "../res/Homeatlast.jpg",
-        url: 'https://music.youtube.com/watch?v=4DzJD_8va34&list=PLggRTYJHrl2tc4MoYOY22gT_ZLcaAx_jL'
+        url: 'https://music.youtube.com/watch?v=4DzJD_8va34&list=PLggRTYJHrl2tc4MoYOY22gT_ZLcaAx_jL',
+        show: true
     },
 
 ]
-
-const clean = item => {
-    var bool = true;
-    var _hold = [];
-        for(var i = 0; i < _hold.length; i++){
-            if(item != _hold[i]){
-                
-            }
-    }
-    return _hold
-}
-
-var genre = data.map(item => item.genre)
-genre = genre.map(()=>clean(genre))
-
-
-
-console.log(genre)
-
 export default data;

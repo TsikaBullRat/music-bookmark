@@ -4,13 +4,10 @@ import { Dropdown } from './Dropdown'
 import {Form} from './Form'
 import { useState } from 'react'
 
-export const Banner = () => {
+export const Banner = props => {
 
-    const [show, setShow] = useState(false)
-    const Show = () =>{
-        setShow(!show)
-    }
-
+    var i;
+    
     return (
         <div className="head-box">
             <div className="profile-box">
@@ -20,13 +17,12 @@ export const Banner = () => {
                 <div>
                     <h1>Ntsikayomzi Ngcakani</h1>
                     <h3>Music Bookmark</h3>
-                    <Form show={[show,Show]}/>
+                    {/*<Form />*/}
                 </div>
             </div>
             <nav className="simple-nav">
-                <Dropdown />
-                <Dropdown />
-                <Dropdown />
+            <Dropdown  
+                    info={props.data}/>
             </nav>
         </div>
     )

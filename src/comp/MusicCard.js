@@ -2,7 +2,6 @@ import React from 'react'
 import './Comp.css'
 
 export const MusicCard = props => {
-    
     return (
         <div key={props.info.id} className="music-card">
             <img src={props.info.res} alt="No Album Art"/>

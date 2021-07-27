@@ -4,58 +4,33 @@ import { useState } from 'react'
 
 export const Form = (props) => {
 
-    console.log(props.show)
-
-    const [display, setDisplay] = useState({
+    const[ show, setShow] = useState(false)
+    const add_track = {
         form: {
-            display: 'none'
+            display: 'block',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '967.8px',
+            background: 'rgba(0,0,0,0.5)',
+            zIndex: 1
         },
         add: {
             display: 'block',
             position: 'relative',
             zIndex: 'inherit'
         }
-    })
-
-    const Check = (bool) =>{
-    if (bool = true) {
-        setDisplay({
-            form: {
-                display: 'none',
-                position: 'fixed',
-                top: 0,
-                width: '100%',
-                height: '967.8px',
-                background: 'rgba(0,0,0,0.5)',
-                zIndex: 1
-            },
-            add: {
-                display: 'block',
-                position: 'relative',
-                zIndex: 'inherit'
-            }
-        })
-    } else {
-        setDisplay({
-            form: {
-                display: 'none'
-            },
-            add: {
-                display: 'block',
-                position: 'relative',
-                zIndex: 'inherit'
-            }
-        })
     }
-}
 
     return (
         <>
-            <button style={display.add} onClick={props.show[1]()}>Add Track</button>
-            <div style={display.form}>
+            <button style={add_track.button} onClick={setShow(!show)}>Add Track</button>
+            <div style={show ? add_track.form : {display:'none'}}>
 
                 <button
                     className="exit-button"
+                    onClick={setShow(!show)}
                 >
                     <IoMdExit size="50px" />
                 </button>
@@ -75,7 +50,7 @@ export const Form = (props) => {
                     <input type="url" />
                     <input type="submit" className="submit" />
                 </form>
-            </div>
+        </div>
         </>
     )
 }

@@ -6,9 +6,11 @@ import './Comp.css'
 export const Body = (props) => {
 
     const Create =item=>{
-        return(
-            <MusicCard info={item} />
-        )
+        if(props.data.show = true){
+            return(
+                <MusicCard info={item} />
+            )
+        }
     }
     return (
         <div className="music-box">

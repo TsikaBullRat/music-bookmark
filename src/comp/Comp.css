@@ -68,13 +68,7 @@
     color: #fff;
     padding: 10px 20px;
     text-align: center;
-    height: 30px;
-}
-.dropdown ul{
-    display: none;
-    list-style: none;
-    background: #50404d;
-    color: #fff;
+    height: 50px;
 }
 .music-box{
     display: grid;
@@ -93,7 +87,7 @@
     margin: 20px;
     padding: 20px;
     transition: 0.3s;
-    z-index: 1;
+    z-index: 0;
 }
 .music-card:hover{
     background: #50404d;
