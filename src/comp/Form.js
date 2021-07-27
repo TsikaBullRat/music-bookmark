@@ -1,15 +1,11 @@
 import './Comp.css'
 import { IoMdExit } from 'react-icons/io'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-var Show = (check, Action) => {
-        
-    
-}
+export const Form = (props) => {
 
-export const Form = () => {
+    console.log(props.show)
 
-    var bool = false
     const [display, setDisplay] = useState({
         form: {
             display: 'none'
@@ -21,9 +17,7 @@ export const Form = () => {
         }
     })
 
-    useEffect(()=>{
-        bool = !bool
-
+    const Check = (bool) =>{
     if (bool = true) {
         setDisplay({
             form: {
@@ -53,17 +47,14 @@ export const Form = () => {
             }
         })
     }
-    return bool
-    },
-    [])
+}
 
     return (
         <>
-            <button style={display.add} onClick={Show()}>Add Track</button>
+            <button style={display.add} onClick={props.show[1]()}>Add Track</button>
             <div style={display.form}>
 
                 <button
-                    onClick={Show(bool, setDisplay)}
                     className="exit-button"
                 >
                     <IoMdExit size="50px" />

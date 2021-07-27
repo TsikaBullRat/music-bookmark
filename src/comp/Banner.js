@@ -2,8 +2,14 @@ import './Comp.css'
 import profile from '../res/profile-image.jfif'
 import { Dropdown } from './Dropdown'
 import {Form} from './Form'
+import { useState } from 'react'
 
-export const Banner = props => {
+export const Banner = () => {
+
+    const [show, setShow] = useState(false)
+    const Show = () =>{
+        setShow(!show)
+    }
 
     return (
         <div className="head-box">
@@ -14,7 +20,7 @@ export const Banner = props => {
                 <div>
                     <h1>Ntsikayomzi Ngcakani</h1>
                     <h3>Music Bookmark</h3>
-                    <Form open="show"/>
+                    <Form show={[show,Show]}/>
                 </div>
             </div>
             <nav className="simple-nav">
