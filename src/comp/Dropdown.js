@@ -25,7 +25,7 @@ export const Dropdown = props => {
     }
     return (
         <>
-            <select className="dropdown" name="Filter" id="filter" onChange={Filter(document.getElementById('filter').value)}>
+            <select className="dropdown" name="Filter" id="filter" >{/*onChange={Filter(document.getElementById('filter').value)}*/}
                 <option value="">All Tracks</option>
                 <optgroup label="Genre">
                     {Genre.map(item =>
