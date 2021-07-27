@@ -57,6 +57,22 @@
     top: 10%;
     left:10%;
 }
+.image-hold a{
+    position: relative;
+    top: 10%;
+    left:10%;
+    background: #50404d;
+    width: 10%;
+    height: 5%;
+}
+/*.my_link{
+    position: relative;
+    top: 10%;
+    left:10%;
+    background: #50404d;
+    width: 10%;
+    height: 5%;
+}*/
 .simple-nav{
     display: flex;
     position: relative;
