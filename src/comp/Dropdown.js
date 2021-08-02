@@ -10,23 +10,14 @@ export const Dropdown = props => {
     const Artist = [...new Set(props.info.map(item => item.artist))]
     const Album = [...new Set(props.info.map(item => item.album))]
 
-    console.log(props)
-
-    const Filter = (change) =>{
-        
-        if(change = null){
-            props.info.show = true
-        }else{
-            props.info.show = false
-            if(change == props.info.genre){props.info.show = true}
-            if(change == props.info.genre){props.info.show = true}
-            if(change == props.info.genre){props.info.show = true}
-        }
+    const Filter = e =>{
+        props.Filter(e.target.value)
     }
+
     return (
         <>
-            <select className="dropdown" name="Filter" id="filter" >{/*onChange={Filter(document.getElementById('filter').value)}*/}
-                <option value="">All Tracks</option>
+            <select className="dropdown" name="Filter" id="filter" onChange={Filter}>
+                <option value="all">All Tracks</option>
                 <optgroup label="Genre">
                     {Genre.map(item =>
                         <option value={item}>{item}</option>
