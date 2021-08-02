@@ -10,9 +10,9 @@ function Main() {
 
     const [show, setShow] = useState(false)
     const [tracks, setTracks] = useState(data)
-    const genre = [...new Set(tracks.map(item => item.genre))]
-    const artist = [...new Set(tracks.map(item => item.artist))]
-    const album = [...new Set(tracks.map(item => item.album))]
+    const genre = tracks.genre ? [] :[...new Set(tracks.map(item => item.genre))] 
+    const artist = tracks.artist ? [] : [...new Set(tracks.map(item => item.artist))]
+    const album = tracks.album ? [] : [...new Set(tracks.map(item => item.album))]
 
 
     const Display = () => setShow(!show)
