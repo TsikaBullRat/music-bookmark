@@ -30,6 +30,9 @@ export const Banner = props => {
             <Dropdown  
                 info={props.data}
                 Filter={props.Filter}
+                genre={props.genre}
+                artist={props.artist}
+                album={props.album}
             />
             </nav>
         </div>

@@ -10,6 +10,10 @@ function Main() {
     
     const [show, setShow] = useState(false)
     const [tracks, setTracks] = useState(data)
+    const [genre, setGenre] = useState([...new Set(tracks.map(item => item.genre))])
+    const [artist, setArtist] = useState([...new Set(tracks.map(item => item.artist))])
+    const [album, setAlbum] = useState([...new Set(tracks.map(item => item.album))])
+    
 
     const Display = () => setShow(!show)
     const Filter = value => {
@@ -24,7 +28,7 @@ function Main() {
                     case item.artist:
                         item.show = true
                         break;
-                    case item.genre:
+                    case item.album:
                         item.show = true
                         break;
                     default:
@@ -34,13 +38,13 @@ function Main() {
             }
         ))
     }
+
     
 
     return (
         <>
-            <Banner data={data} Display={Display} Filter={Filter} />
+            <Banner data={tracks} Display={Display} Filter={Filter} genre={genre} artist={artist} album={album}/>
             <Body data={tracks} show={show} Display={Display} Hide={Display}/>
-            
         </>
 
     )

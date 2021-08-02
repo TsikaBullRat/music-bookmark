@@ -14,11 +14,14 @@ export const Body = (props) => {
         setTracks([...tracks, { id: uuid(), song, artist, album, genre, url, year, res:' ', show: true }])
         props.Display()
     }
-    console.log(tracks);
+    const handleDelete = id =>{
+        var newtracks = tracks.filter(item=>item.id !== id)
+        setTracks(newtracks)
+    }
     return (
         <>
         <div className="music-box">
-            {tracks.map(item=> item.show? <MusicCard info={item} /> : null)}
+            {tracks.map(item=> item.show? <MusicCard info={item} Delete={handleDelete}/> : null)}
         </div>
         <Form display={props.show} Hide={props.Display} Submit={handleSubmit} />
         </>

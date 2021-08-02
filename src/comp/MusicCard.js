@@ -3,6 +3,11 @@ import './Comp.css'
 import { BiPlay, BiTrash } from 'react-icons/bi'
 
 export const MusicCard = props => {
+
+    const handleDelete = () => {
+        props.Delete(props.info.id)
+    }
+
     return (
         <div key={props.info.id} className="music-card">
             <img src={props.info.res} alt="No Album Art" />
@@ -11,10 +16,10 @@ export const MusicCard = props => {
             <p>Album: {props.info.album}</p>
             <p>Genre: {props.info.genre}</p>
             <div style={{display:'flex', justifyContent:'space-between'}}>
-            <a href={props.info.url}>
+            <a href={props.info.url} className="music-icons">
                 <BiPlay />
             </a>
-            <button>
+            <button onClick={handleDelete} className="music-icons">
                 <BiTrash />
             </button>
             </div>
