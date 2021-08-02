@@ -7,13 +7,13 @@ import data from "./comp/Data"
 
 function Main() {
 
-    
+
     const [show, setShow] = useState(false)
     const [tracks, setTracks] = useState(data)
-    const [genre, setGenre] = useState([...new Set(tracks.map(item => item.genre))])
-    const [artist, setArtist] = useState([...new Set(tracks.map(item => item.artist))])
-    const [album, setAlbum] = useState([...new Set(tracks.map(item => item.album))])
-    
+    const genre = [...new Set(tracks.map(item => item.genre))]
+    const artist = [...new Set(tracks.map(item => item.artist))]
+    const album = [...new Set(tracks.map(item => item.album))]
+
 
     const Display = () => setShow(!show)
     const Filter = value => {
@@ -39,12 +39,12 @@ function Main() {
         ))
     }
 
-    
+
 
     return (
         <>
-            <Banner data={tracks} Display={Display} Filter={Filter} genre={genre} artist={artist} album={album}/>
-            <Body data={tracks} show={show} Display={Display} Hide={Display}/>
+            <Banner data={tracks} Display={Display} Filter={Filter} genre={genre} artist={artist} album={album} />
+            <Body data={tracks} show={show} Display={Display} Hide={Display} />
         </>
 
     )
