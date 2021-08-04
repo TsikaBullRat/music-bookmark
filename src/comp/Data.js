@@ -6,7 +6,7 @@ const data = [
         album: 'Floetic',
         year: 2002,
         genre: 'RnB',
-        res: "../res/Floetic.jfif",
+        res: require('../res/Floetic.jfif'),
         url: 'https://music.youtube.com/watch?v=vTFg3QjSfw4&list=RDAMVMvTFg3QjSfw4',
         show: true
     },
@@ -17,7 +17,7 @@ const data = [
         album: 'Superunknown',
         year: 1994,
         genre: 'Rock',
-        res: "../res/Superunknown.jpg",
+        res: require('../res/Superunknown.jpg'),
         url: 'https://music.youtube.com/watch?v=1rtNlV9Ytlk&list=RDAMVM1rtNlV9Ytlk',
         show: true
     },
@@ -28,7 +28,7 @@ const data = [
         album: 'Home at Last',
         year: 2003,
         genre: 'Jazz',
-        res: "../res/Homeatlast.jpg",
+        res: require('../res/Homeatlast.jpg'),
         url: 'https://music.youtube.com/watch?v=CWewHqinajk&list=RDAMVMCWewHqinajk',
         show: true
     },
@@ -39,7 +39,7 @@ const data = [
         album: 'Let\'s get Free',
         year: 2000,
         genre: 'Hip Hop',
-        res: "../res/Letsgetfree.jfif",
+        res: require('../res/Letsgetfree.jfif'),
         url: 'https://music.youtube.com/watch?v=8OK-u9IH2X4&list=RDAMVM8OK-u9IH2X4',
         show: true
     },
@@ -50,7 +50,7 @@ const data = [
         album: 'Floetic',
         year: 2002,
         genre: 'RnB',
-        res: "../res/Floetic.jfif",
+        res: require('../res/Floetic.jfif'),
         url: 'https://music.youtube.com/watch?v=LGy-QTEVZOA&list=RDAMVMLGy-QTEVZOA',
         show: true
     },
@@ -61,7 +61,7 @@ const data = [
         album: 'Floetic',
         year: 2002,
         genre: 'RnB',
-        res: "../res/Floetic.jfif",
+        res: require('../res/Floetic.jfif'),
         url: 'https://music.youtube.com/watch?v=PyPnLY0Bzok&list=RDAMVMPyPnLY0Bzok',
         show: true
     },
@@ -72,7 +72,7 @@ const data = [
         album: 'Floetic',
         year: 2002,
         genre: 'RnB',
-        res: "../res/Floetic.jfif",
+        res: require('../res/Floetic.jfif'),
         url: 'https://music.youtube.com/watch?v=p1TWftWyS88&list=RDAMVMp1TWftWyS88',
         show: true
     },
@@ -83,7 +83,7 @@ const data = [
         album: 'Superunknown',
         year: 1994,
         genre: 'Rock',
-        res: "../res/Superunknown.jpg",
+        res: require('../res/Superunknown.jpg'),
         url: 'https://music.youtube.com/watch?v=y4FCpOBZPlk&list=RDAMVMy4FCpOBZPlk',
         show: true
     },
@@ -94,7 +94,7 @@ const data = [
         album: 'Superunknown',
         year: 1994,
         genre: 'Rock',
-        res: "../res/Superunknown.jpg",
+        res: require('../res/Superunknown.jpg'),
         url: 'https://music.youtube.com/watch?v=9kIv6vVRKpw&list=RDAMVM9kIv6vVRKpw',
         show: true
     },
@@ -105,7 +105,7 @@ const data = [
         album: 'Ultramega OK',
         year: 1994,
         genre: 'Rock',
-        res: "../res/Superunknown.jpg",
+        res: require('../res/Superunknown.jpg'),
         url: 'https://music.youtube.com/watch?v=gaq-Z0gZTG0&list=RDAMVMgaq-Z0gZTG0',
         show: true
     },
@@ -116,7 +116,7 @@ const data = [
         album: 'Zimology',
         year: 1998,
         genre: 'Jazz',
-        res: "../res/Homeatlast.jpg",
+        res: require('../res/Homeatlast.jpg'),
         url: 'https://music.youtube.com/watch?v=rfw6LT-q04s&list=RDAMVMrfw6LT-q04s',
         show: true
     },
@@ -127,7 +127,7 @@ const data = [
         album: 'Enchanted Gardens',
         year: 2001,
         genre: 'Jazz',
-        res: "../res/Homeatlast.jpg",
+        res: require('../res/Homeatlast.jpg'),
         url: 'https://music.youtube.com/watch?v=_IisP38Mdv8&list=RDAMVMrfw6LT-q04s',
         show: true
     },
@@ -138,7 +138,7 @@ const data = [
         album: 'Dollor Brand at Montreux',
         year: 1989,
         genre: 'Jazz',
-        res: "../res/Homeatlast.jpg",
+        res: require('../res/Homeatlast.jpg'),
         url: 'https://music.youtube.com/watch?v=4DzJD_8va34&list=PLggRTYJHrl2tc4MoYOY22gT_ZLcaAx_jL',
         show: true
     },
